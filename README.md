@@ -34,14 +34,14 @@ Ember 作为框架，它提供给你的是一个基础，涵盖了现代 Web App
 
 1. [全栈式解决方案​](./#quan-zhan-shi-jie-jue-fang-an)
 2. [基于jQuery](./#ji-yu-jquery)​
-3. 良好的兼容性​
-4. 约定优于配置
-5. 数据的双向绑定
-6. 基于JavaScript的模板引擎
-7. 完备的构建工具和完整构建流程
-8. 渐进式的向下兼容
-9. 开发效率阶梯式的增加
-10. 牛逼的开发插件
+3. [良好的兼容性](./#liang-hao-de-jian-rong-xing)​
+4. [约定优于配置](./#yue-ding-you-yu-pei-zhi)
+5. [数据的双向绑定](./#shu-ju-de-shuang-xiang-bang-ding)
+6. [基于JavaScript的模板引擎](./#ji-yu-javascript-de-zi-fu-chuan-mo-ban-yin-qing)
+7. [完备的构建工具和完整构建流程](./#wan-bei-de-gou-jian-gong-ju-he-wan-zheng-gou-jian-liu-cheng)
+8. [渐进式的向下兼容](./#jian-jin-shi-de-xiang-xia-jian-rong)
+9. [开发效率阶梯式的增加](./#kai-fa-xiao-lv-jie-ti-shi-de-zeng-jia)
+10. [牛逼的开发插件](./#niu-bi-de-kai-fa-tiao-shi-cha-jian)
 
 ### 全栈式解决方案​
 
