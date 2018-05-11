@@ -10,9 +10,9 @@
 
 Ember Js的学习曲线比较大，所以在正式进入Ember的世界的时候还是要熟悉以下技能
 
-1. JavaScript
-2. jQuery
-3. ES5或ES6
+1. **JavaScript**
+2. **jQuery**
+3. **ES5或ES6**
 4. SASS
 5. CSSModuel
 6. HTML Bars
