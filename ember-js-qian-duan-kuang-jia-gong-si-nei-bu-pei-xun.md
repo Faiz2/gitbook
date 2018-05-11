@@ -33,15 +33,15 @@ Ember 作为框架，它提供给你的是一个基础，涵盖了现代 Web App
 原因有以下几点
 
 1. [全栈式解决方案​​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#quan-zhan-shi-jie-jue-fang-an)
-2. ​[基于jQuery](https://resources.gitbook.io/ember-js/#ji-yu-jquery)​
-3. ​[良好的兼容性](https://resources.gitbook.io/ember-js/#liang-hao-de-jian-rong-xing)​
-4. ​[约定优于配置](https://resources.gitbook.io/ember-js/#yue-ding-you-yu-pei-zhi)​
-5. ​[数据的双向绑定](https://resources.gitbook.io/ember-js/#shu-ju-de-shuang-xiang-bang-ding)​
-6. ​[基于JavaScript的模板引擎](https://resources.gitbook.io/ember-js/#ji-yu-javascript-de-zi-fu-chuan-mo-ban-yin-qing)​
-7. ​[完备的构建工具和完整构建流程](https://resources.gitbook.io/ember-js/#wan-bei-de-gou-jian-gong-ju-he-wan-zheng-gou-jian-liu-cheng)​
-8. ​[渐进式的向下兼容](https://resources.gitbook.io/ember-js/#jian-jin-shi-de-xiang-xia-jian-rong)​
-9. ​[开发效率阶梯式的增加](https://resources.gitbook.io/ember-js/#kai-fa-xiao-lv-jie-ti-shi-de-zeng-jia)​
-10. ​[牛逼的开发插件](https://resources.gitbook.io/ember-js/#niu-bi-de-kai-fa-tiao-shi-cha-jian)​
+2. ​[基于jQuery](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#ji-yu-jquery)​
+3. [​良好的兼容性​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#liang-hao-de-jian-rong-xing)
+4. ​[约定优于配置​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#yue-ding-you-yu-pei-zhi)
+5. [​数据的双向绑定​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#shu-ju-de-shuang-xiang-bang-ding)
+6. [​基于JavaScript的模板引擎​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#ji-yu-javascript-de-zi-fu-chuan-mo-ban-yin-qing)
+7. ​[完备的构建工具和完整构建流程​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#wan-bei-de-gou-jian-gong-ju-he-wan-zheng-gou-jian-liu-cheng)
+8. ​[渐进式的向下兼容​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#jian-jin-shi-de-xiang-xia-jian-rong)
+9. ​[开发效率阶梯式的增加​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#kai-fa-xiao-lv-jie-ti-shi-de-zeng-jia)
+10. ​[牛逼的开发插件​](ember-js-qian-duan-kuang-jia-gong-si-nei-bu-pei-xun.md#niu-bi-de-kai-fa-tiao-shi-cha-jian)
 
 ### 全栈式解决方案​ {#quan-zhan-shi-jie-jue-fang-an}
 
