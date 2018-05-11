@@ -2,7 +2,7 @@
 description: 该文档用于Pharbers(法伯宏业)公司内部培训新人使用
 ---
 
-# Ember Js 前端框架-公司内部培训
+# 进入Ember吧，勇敢的少年哟
 
 ## 什么是Ember Js
 
