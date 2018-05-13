@@ -79,9 +79,21 @@
 
 ### Ember-Echarts
 
+> Echarts  Baidu的可视化图表，相当的强大，Ember当然也要有相应的Addons啦！数据配置与官网几乎一样，用过的人学习成本为0，新人也只需要看一下demo就会。
+
 ### Ember-Mirage
 
+> 这个就牛逼啦！这个是专门为前后端分离应用的虚拟化的服务。
+>
+> 怎么理解这个东西呢？当你的后端小伙伴还没有开发出来你需要的对应接口时，你可以用这个来充当这个接口来使用并且返回你要的数据，来达到展示的目的，知道后端小伙伴给你接口在替换掉。
+>
+> [传送门](https://www.ember-cli-mirage.com/)
+
 ### Ember-Cookies
+
+> 这个好理解，就是直接操作Cookie的Addons。
+>
+> [传送门](https://www.npmjs.com/package/ember-cli-cookie)
 
 ### Ember-Css-Modules
 
