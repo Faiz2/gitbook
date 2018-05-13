@@ -29,8 +29,6 @@
 
 ### Node.js
 
-> [传送门 -&gt; Node.js](https://nodejs.org/en/)
-
 > Node.js他不是一个js应用，而是js运行平台。
 >
 > Node.js采用C++语言编写而成，是一个Javascript的运行环境。
@@ -44,6 +42,8 @@
 > Node.js是一个后端的Javascript运行环境，这意味着你可以编写系统级或者服务器端的Javascript代码，交给Node.js来解释执行。
 >
 > 更多的信息点击传送门去官网了解
+>
+> [传送门](https://nodejs.org/en/)
 
 ### Yarn
 
