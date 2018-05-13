@@ -69,6 +69,14 @@
 
 ### Sass
 
+> Sass跟Less一样都是一个Css的预处理语言，咱们框架内用的Sass中的scss。
+>
+> Sass分2种，第一种是以sass结尾的文件，第二种是新的以scss结尾的文件。
+>
+> sass用法相对于scss有点点复杂尤其在缩进层级的时候，而scss几乎就是css的写法，几乎没有学习曲线，对新人友好，有的时候直接把css内容直接黏贴到scss中直接可以使用
+>
+> [传送门](https://sass-lang.com/)
+
 ### Ember-Echarts
 
 ### Ember-Mirage
