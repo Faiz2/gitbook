@@ -85,6 +85,8 @@ Ember Js 社区提供了完备的构建工具和构建流程来保证 ember app 
 
 ​[npm 这个是啥我就不多说了 &lt;- 传送门](https://www.npmjs.com/)​
 
+[yarn一个包管理工具 &lt;- 传送门](https://yarnpkg.com/lang/en/)
+
 ### 渐进式的向下兼容 {#jian-jin-shi-de-xiang-xia-jian-rong}
 
 前端的发展日新月异，新技术层出不穷，要想一直惠于新技术和新方案的发展，需要不断的升级优化。
