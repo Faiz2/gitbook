@@ -8,4 +8,5 @@
 * Ember 中的Classes 和 Instances
 * Ember 中计算属性
 * Ember 中的路由器
+* Ember 中的Components
 
