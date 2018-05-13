@@ -12,7 +12,7 @@ description: 该文档用于Pharbers(法伯宏业)公司内部培训新人使用
 
 {% tabs %}
 {% tab title="简单解释" %}
-Ember Js简单来说就是一个基于**jQuery**的前端框架，所有jQuery的插件他都可以使用并且提供了开箱即用的api与模板类
+Ember Js简单来说就是一个基于**jQuery**的前端框架\(SPA\)，所有jQuery的插件他都可以使用并且提供了开箱即用的api与模板类
 {% endtab %}
 
 {% tab title="详细解释" %}
