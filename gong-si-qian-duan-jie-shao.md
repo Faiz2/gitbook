@@ -59,6 +59,14 @@
 
 ### Ember-Bootstrap
 
+> Bootstrap都知道，来自Twitter，是目前市面上排名前几的UI层面的前端框架。
+>
+> 那Ember中对于引用Bootstrap来说是一件比较繁琐的事情，所以就有了Ember-Bootstrap这个Addons。
+>
+> 用法与原生的少许不同，相信你很快就会适应的。
+>
+> [传送门](https://www.ember-bootstrap.com/)
+
 ### Sass
 
 ### Ember-Echarts
