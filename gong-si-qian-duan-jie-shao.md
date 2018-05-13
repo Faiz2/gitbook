@@ -97,9 +97,23 @@
 
 ### Ember-Css-Modules
 
+> 如果有用过React的话，那么它的用法与这个很像。
+>
+> 简单讲一下，具体的看传送门，当你写一个css的时候不需要考虑重名问题，因为他会在项目编译时会更具你当前的路径给出你的css命名方式，一般都是以一个唯一标识的hash来区别 等。
+>
+> [传送门](https://github.com/salsify/ember-css-modules)
+
 ### Ember-File-Upload
 
+> 上传文件的Addons没啥特别要将的。
+>
+> [传送门](http://tim-evans.github.io/ember-file-upload/latest/)
+
 ### Ember-Models-Table
+
+> 可以结合Ember Data，可做复杂化table的Addons。
+>
+> [传送门](http://onechiporenko.github.io/ember-models-table/v.2/#/examples)
 
 ### Postcss
 
