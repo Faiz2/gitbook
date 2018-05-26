@@ -11,5 +11,5 @@
 * Ember 中的Components
 * Ember Data
 * Ember Testing
-* 总结
+* [总结](zong-jie.md)
 
