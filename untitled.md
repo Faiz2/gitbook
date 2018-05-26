@@ -8,6 +8,10 @@ description: 本章主要讲解，如何区分Classes和Instances并且如何创
 
 在这里，您将了解这个extend（）方法以及Ember对象模型的其他主要功能。
 
+对于初学者来说都会有个疑问，就是现在都有class的声明为啥Ember还要用extend呢？
+
+这是因为Ember出来的时候ES6那个时候还没出世，Ember也不好预测以后的写法是什么样子，所以就算则了当时的ES5的语法来做声明。
+
 ## 如何定义类
 
 要定义一个新的Ember类，需要调用EmberObject上的extend（）方法下面是具体语法：
