@@ -10,7 +10,6 @@
 * Ember 中的路由器
 * Ember 中的Components
 * Ember Data
-* Ember Model
 * Ember Testing
 * 总结
 
