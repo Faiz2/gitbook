@@ -122,3 +122,5 @@ window.console.info(qp.get('lastName')) // console Qian
 
 ```
 
+到现在computed基本的用法和概念差不多都讲完了，剩余拓展的部分你可以去官网查看相对应的例子。
+
