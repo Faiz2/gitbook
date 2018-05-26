@@ -44,3 +44,81 @@ let qp = Person.create({
 window.console.info(qp.get('fullName')) // console 钱-鹏
 ```
 
+此处一定要是用.get来获取fullName，只有触发这个get操作，计算属性才会被Ember执行。
+
+computed依赖的firstName和lastName任何改变，那在get fullName的时候就会重新计算。
+
+computed的计算依赖还可以**Object里的属性值**，以下是code：
+
+```javascript
+import EmberObject, { computed } from '@ember/object';
+
+const obj = EmberObject.extend({
+    baz: { foo: 'Test1', tzl: 'Test2' }
+    fullName: computed('baz.{foo, tzl}',  function(){
+        return `${this.get('baz.foo')}-${this.get('baz.tzl')}`
+    })
+});
+
+let o = obj.create();
+window.console.info(o.get('fullName')) // console Test1-Test2
+```
+
+computed的计算依赖也可以computed，以下是code：
+
+```javascript
+import EmberObject, { computed } from '@ember/object';
+
+const Person = EmberObject.extend({
+    firstName: '',
+    lastName: '',
+    fullName: computed('firstName', 'lastName',  function(){
+        return `${this.get('firstName')}-${this.get('lastName')}`
+    }),
+    describe: computed('fullName', function(){
+        return `你好我的名字叫: ${this.get('fullName')}`;
+    })
+});
+
+let qp = Person.create({
+    firstName: '钱',
+    lastName: '鹏'
+})
+window.console.info(qp.get('describe')) // console 你好我的名字叫: 钱-鹏
+```
+
+上章我们讲到，Object会有get和set方法，那computed也是Object扩展下来的，那么它肯定也有get和set，computed所有的get方法都在上面演示完了，下面演示以下set，在一般情况下很少会对computed进行set操作，大多是都是get，那如何使用set，以下是code
+
+```javascript
+import EmberObject, { computed } from '@ember/object';
+
+const Person = EmberObject.extend({
+    firstName: '',
+    lastName: '',
+    fullName: computed('firstName', 'lastName',{
+        get(key) {
+            return `${this.get('firstName')}-${this.get('lastName')}`
+        },
+        set(key, value) {
+            let [fName, lName] = value.split(/\s+/)
+            this.set('firstName', fName);
+            this.set('lastName', lName);
+            return value;
+        }
+    })
+});
+
+let qp = Person.create({
+    firstName: '钱',
+    lastName: '鹏'
+})
+window.console.info(qp.get('fullName')) // console 钱-鹏
+window.console.info(qp.get('firstName')) // console 钱
+window.console.info(qp.get('lastName')) // console 鹏
+qp.set('fullName', 'Alex Qian');
+window.console.info(qp.get('fullName')) // console Alex-Qian
+window.console.info(qp.get('firstName')) // console Alex
+window.console.info(qp.get('lastName')) // console Qian
+
+```
+
