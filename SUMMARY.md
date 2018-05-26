@@ -7,7 +7,7 @@
 * [Ember 中的Object Model](ember-zhong-de-object.md)
 * [Ember 中的Classes 和 Instances](ember-classes-instances.md)
 * [Ember 中计算属性](ember-zhong-ji-suan-shu-xing.md)
-* Ember 中的路由器
+* [Ember 中的路由器](ember-zhong-de-lu-you-qi.md)
 * Ember 中的Components
 * Ember Data
 * [Ember Testing](ember-testing.md)
