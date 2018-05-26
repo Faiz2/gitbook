@@ -8,7 +8,7 @@ description: 本章主要讲解计算属性的一些概念与使用语法
 
 计算属性在Ember中算是比较重要的一个特性，下面我们来讲一下他大概在什么场景下会使用。
 
-首先简单的说下计算属性的概念，计算属性允许您将函数声明为属性，就是你可以通过将计算属性定义为function来创建一个执行函数，当您要求该属性的值时，Ember将自动调用该属性。
+首先简单的说下计算属性的概念，计算属性允许您将函数声明为属性，就是你可以通过将计算属性定义为function来创建一个执行函数，当要求出该属性的值时，Ember将自动调用。
 
 有一点尤为重要，计算属性是**惰性求值（lazy）**，简单来讲就是需要时在进行计算处理，所以在使用时会有些小陷阱需要注意哦。
 
@@ -48,6 +48,8 @@ window.console.info(qp.get('fullName')) // console 钱-鹏
 
 computed依赖的firstName和lastName任何改变，那在get fullName的时候就会重新计算。
 
+
+
 computed的计算依赖还可以**Object里的属性值**，以下是code：
 
 ```javascript
@@ -63,6 +65,8 @@ const obj = EmberObject.extend({
 let o = obj.create();
 window.console.info(o.get('fullName')) // console Test1-Test2
 ```
+
+
 
 computed的计算依赖也可以computed，以下是code：
 
@@ -86,6 +90,8 @@ let qp = Person.create({
 })
 window.console.info(qp.get('describe')) // console 你好我的名字叫: 钱-鹏
 ```
+
+
 
 上章我们讲到，Object会有get和set方法，那computed也是Object扩展下来的，那么它肯定也有get和set，computed所有的get方法都在上面演示完了，下面演示以下set，在一般情况下很少会对computed进行set操作，大多是都是get，那如何使用set，以下是code
 
