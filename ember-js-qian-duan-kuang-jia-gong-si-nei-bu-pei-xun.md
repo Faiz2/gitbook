@@ -75,7 +75,7 @@ Ember Js 秉承约定由于配置的理念，已经在框架层面把应用的�
 
 Ember Js中的模板的渲染是基于Glimmer.js引擎，对于习惯了传统模板的很多后端程序员来说，字符串模板非常易于接受和理解，几乎没有学习成本，而且能很好的反应 html 结构和视图，这点相对于 React 的 jsx 语法就有很大的不同。这点也足以构成像我这样的后端程序员偏爱 Ember Js 的一个理由。
 
-​[Glimmer Js &lt;- 传送门](https://glimmerjs.com/)​
+​[Glimmer Js &lt;- 传送门](https://glimmerjs.com/)​ 建议Ember入门后再去看着个
 
 ### 完备的构建工具和完整构建流程 {#wan-bei-de-gou-jian-gong-ju-he-wan-zheng-gou-jian-liu-cheng}
 
