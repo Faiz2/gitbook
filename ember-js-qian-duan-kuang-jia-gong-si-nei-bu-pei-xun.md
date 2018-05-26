@@ -95,7 +95,7 @@ Ember Js 社区提供了完备的构建工具和构建流程来保证 ember app 
 
 ### 开发效率阶梯式的增加 {#kai-fa-xiao-lv-jie-ti-shi-de-zeng-jia}
 
-当你熟悉了Ember Js框架后，你的开发效率是成本的增长，这个等你们掌握了后就会有感受的。
+当你熟悉了Ember Js框架后，你的开发效率是成倍的增长，这个等你们掌握了后就会有感受的。
 
 ### 牛逼的开发调试插件 {#niu-bi-de-kai-fa-tiao-shi-cha-jian}
 
