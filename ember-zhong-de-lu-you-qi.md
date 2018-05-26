@@ -155,13 +155,157 @@ Route.map(function() {
 
 ### model hook
 
-model的钩子函数，当这个钩子触发时，就已经确定了数据要往哪个模板进行渲染，
+model是钩子函数，大部分经过路由的数据渲染都是从model这个hook来执行的，当这个钩子触发时，就已经确定了数据要往哪个模板进行渲染，只需要把数据访问逻辑写好就没什么问题了，下面是示例code
+
+{% code-tabs %}
+{% code-tabs-item title="model.js" %}
+```javascript
+import Route from '@ember/routing/route';
+
+export default Route.extend({
+    model() {
+        return [
+            {
+                id: 1,
+                name: '张三'
+            },
+            {
+                id: 2,
+                name: '李四'    
+            }
+        ]
+    }
+});
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="model.hbs" %}
+```markup
+<div>
+    <ul>
+        {{#each model as |item| }}
+            <li>{{item.name}}</li>
+        {{/each}}
+    </ul>
+</div>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### 代码解释
+
+访问mode路由后，该路由model hook被触发  返回数据视图进行渲染，视图层通过each进行循环，把从model出来的数据渲染到视图的ul下。
+
+上面的例子是手动设置假数据，下面会有ajax进行请求模拟真实场景的code
+
+{% code-tabs %}
+{% code-tabs-item title="model.js" %}
+```javascript
+import Route from '@ember/routing/route';
+import { inject } from '@ember/service';
+
+export default Route.extend({
+    ajax: inject(),
+    model() {
+        return this.get('ajax').request('/api/search')
+    }
+});
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="model.hbs" %}
+```markup
+<div>
+    <ul>
+        {{#each model as |item| }}
+            <li>{{item.name}}</li>
+        {{/each}}
+    </ul>
+</div>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### 代码解释
+
+上面的code中用到了 inject，Ember中有service的概念也有依赖注入的概念，具体的你们可自行Google来查询，Ember重新写了jQuery的ajax的Function，让其更加符合Promise/A+规范，当然jQuery在3.0后已经完全符合Promise/A+规范了，在这里用inject的意思是，因为Ember中把ajax注册成了service，那使用时就应该用依赖注入的形式来使用来减少代码的污染与耦合，ajax对象里实现了request、post、put等函数。
 
 ### 动态model hook
 
-### 多重model hook
+动态的model hook以刚才讲的没啥太大的区别，简单的说就是多了个传参，比如：http://localhost:4200/api/search/10010，以下是code
+
+{% code-tabs %}
+{% code-tabs-item title="model.js" %}
+```javascript
+import Route from '@ember/routing/route';
+import { inject } from '@ember/service';
+
+export default Route.extend({
+    ajax: inject(),
+    model(params) {
+        let url = 'api/search/' + params.id
+        return this.get('ajax').request(url)
+    }
+});
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### 代码解释
+
+跟上面的code很像，就多了个参数，唯一值得说的就是 params.id的id从何而来，这就和你声明路由时的标志有关系啦，你怎么声明的那就怎么取出来就行了。
 
 ### 重用model 上下文
+
+有时候你需要获取一个模型，但是你的路由没有参数，因为它是一个子路由，直接在上面或者上面几层的路由有你的路由需要的参数。
+
+在这种情况下，您可以使用paramsFor方法来获取父路由的参数。
+
+这里需要注意的是，如果你尝试在同级别路由上使用paramsFor，将无法获得你预期的结果。以下是code
+
+{% code-tabs %}
+{% code-tabs-item title="model/index.js" %}
+```javascript
+import Route from '@ember/routing/route';
+import { inject } from '@ember/service';
+
+export default Route.extend({
+    ajax: inject(),
+    model() {
+        let { id } = this.paramsFor('model')
+        let url = 'api/search/' + id
+        return this.get('ajax').request(url)
+    }
+});
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### 代码解释
+
+通过Route提供的paramsFor来过去model路由的传入参数，这里获取的是所有，我这里只有一个id所以就取了一个。
+
+在一些特殊情况下，父路由已经加载了部分数据，而子路由在访问时需要用到那些数据，这个时候可以使用modelFor，以下是code
+
+{% code-tabs %}
+{% code-tabs-item title="model/index.js" %}
+```javascript
+import Route from '@ember/routing/route';
+import { inject } from '@ember/service';
+
+export default Route.extend({
+    ajax: inject(),
+    model() {
+        return this.modelFor('model')
+    }
+});
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 路由的跳转
 
