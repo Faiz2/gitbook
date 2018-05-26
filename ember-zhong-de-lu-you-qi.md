@@ -145,3 +145,15 @@ Route.map(function() {
 
 上面只是些对url的控制，还算很简单，只要搞清楚层级关系应该都没什么么问题，所以加油吧！
 
+## 路由中获取模型数据
+
+### model hook
+
+### 动态model hook
+
+### 多重model hook
+
+### 重用model 上下文
+
+## 路由的跳转
+
