@@ -71,9 +71,77 @@ Route.map(function() {
 {% code-tabs-item title="app/router.js" %}
 ```javascript
 Route.map(function() {
-    this.route('my-first-route', {path: 'hiEmber'})
+    this.route('my-first-route', {path: '/hiEmber'})
 })
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+这个时候你的访问样子就变成了，http://localhost:4200/hiEmber ，这是因为path这个参数设置的是url进来时的一个标志，符合这个标志的就会进行渲染，这个时候你就会发现url变了，但是渲染的内容却没有改变。
+
+## 定义子路由
+
+{% code-tabs %}
+{% code-tabs-item title="创建子路由命令" %}
+```bash
+ember g route my-first-route/child
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+相对应的router.js文件是这个样子滴
+
+{% code-tabs %}
+{% code-tabs-item title="app/router.js" %}
+```javascript
+Route.map(function() {
+    this.route('my-first-route', {path: 'hiEmber'}, function(){
+        this.route('child')
+    })
+})
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+这个时候你访问应该是 http://localhost:4200/hiEmber/child
+
+每个路由下面都会有个index的子路由，这部分工作由Ember帮我们完成了，其实完整的应该是这个样子的
+
+{% code-tabs %}
+{% code-tabs-item title="app/router.js" %}
+```javascript
+Route.map(function() {
+    this.route('my-first-route', {path: 'hiEmber'}, function(){
+        this.route('index', {path: '/'});
+        this.route('child');
+    })
+})
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+## 创建动态路由
+
+动态路由是指，在访问url时，url后的参数会变动的，比如我们在看博客时，每点击一个博客上面的url就会相应的变动。
+
+相对应的router.js文件是这个样子滴
+
+{% code-tabs %}
+{% code-tabs-item title="app/router.js" %}
+```javascript
+Route.map(function() {
+    this.route('my-first-route', {path: 'hiEmber:id'}, function(){
+        this.route('index', {path: '/'});
+        this.route('child');
+    })
+})
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+那访问的地址将会变成  http://localhost:4200/hiEmber/165142116510/child
+
+## 第一部分总结
+
+上面只是些对url的控制，还算很简单，只要搞清楚层级关系应该都没什么么问题，所以加油吧！
 
