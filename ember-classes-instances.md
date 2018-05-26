@@ -65,7 +65,7 @@ export default Component.extend({
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-一般情况下Component不会单独创建的，但是也有例外，比如当你的子组件需要依赖于父组件的时候，这个是你可以进行继承的方式进行code，下面是具体实现
+一般情况下Component不会单独创建的，但是也有例外，比如当你的子组件需要依赖于父组件的时候，这个时候你可以进行继承来完善你的code，下面是具体实现
 
 {% code-tabs %}
 {% code-tabs-item title="image-info.js" %}
