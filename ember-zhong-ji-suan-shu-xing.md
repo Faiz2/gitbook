@@ -30,10 +30,17 @@ import EmberObject, { computed } from '@ember/object';
 const Person = EmberObject.extend({
     firstName: '',
     lastName: '',
-    fullName: computed('firstName', 'lastName',  {
-        let firstName = this.
-        return ``
+    fullName: computed('firstName', 'lastName',  function(){
+        let firstName = this.get('firstName');
+        let lastName = this.get('lastName');
+        return `${firstName}-${lastName}`
     })
 });
+
+let qp = Person.create({
+    firstName: '钱',
+    lastName: '鹏'
+})
+window.console.info(qp.get('fullName')) // console 钱-鹏
 ```
 
