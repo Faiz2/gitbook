@@ -6,7 +6,7 @@
 * [公司前端介绍](gong-si-qian-duan-jie-shao.md)
 * [Ember 中的Object Model](ember-zhong-de-object.md)
 * [Ember 中的Classes 和 Instances](untitled.md)
-* Ember 中计算属性
+* [Ember 中计算属性](ember-zhong-ji-suan-shu-xing.md)
 * Ember 中的路由器
 * Ember 中的Components
 * Ember Data
