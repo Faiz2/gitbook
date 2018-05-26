@@ -309,3 +309,17 @@ export default Route.extend({
 
 ## 路由的跳转
 
+重定向和跳转，都是web开发中会遇到的需求或者问题，今天我们来看看在Ember中是怎么做这件事情的吧！
+
+第一种方法是**transitionTo**，从route调用transitionTo或从Controller中调用**transitionToRoute。**
+
+这写操作将停止当前正在进行的所有，并启动一个新的transition作为重定向进入到另一页面。
+
+ transitionTo的行为与link-to完全相同。关于link-to 自行去官网看template
+
+另一个是**replaceWith**，工作方式与transitionTo相同。
+
+它们之间唯一的区别是他们对于历史管理， replaceWith替换当前路由记录并将其替换为我们重定向到的路由记录，而transitionTo离开当前路由的记录并为重定向创建一个新记录。
+
+具体的请去官方网站查看  [传送门](https://guides.emberjs.com/v2.18.0/routing/redirection/)
+
