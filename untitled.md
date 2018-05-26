@@ -2,7 +2,7 @@
 description: 本章主要讲解，如何区分Classes和Instances并且如何创建了解该语法
 ---
 
-# aaa
+# Ember 中的Classes 和 Instances
 
 在了解Ember时，你会看到类似Component.extend（）和DS.Model.extend（）的代码。
 
