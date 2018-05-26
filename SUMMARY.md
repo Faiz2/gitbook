@@ -10,6 +10,6 @@
 * Ember 中的路由器
 * Ember 中的Components
 * Ember Data
-* Ember Testing
+* [Ember Testing](ember-testing.md)
 * [总结](zong-jie.md)
 
