@@ -4,9 +4,9 @@ description: 本章主要讲解，如何区分Classes和Instances并且如何创
 
 # Ember 中的Classes 和 Instances
 
-在了解Ember时，你会看到类似Component.extend（）和DS.Model.extend（）的代码。
+在了解Ember时，你会看到类似Component.extend和DS.Model.extend的代码。
 
-在这里，您将了解这个extend（）方法以及Ember对象模型的其他主要功能。
+在这里，你将了解这个extend方法以及Ember对象模型的其他主要功能。
 
 对于初学者来说都会有个疑问，就是现在都有class的声明为啥Ember还要用extend呢？
 
