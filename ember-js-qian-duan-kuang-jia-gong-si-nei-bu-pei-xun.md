@@ -85,7 +85,7 @@ Ember Js 社区提供了完备的构建工具和构建流程来保证 ember app 
 
 ​[npm 这个是啥我就不多说了 &lt;- 传送门](https://www.npmjs.com/)​
 
-[yarn一个包管理工具 &lt;- 传送门](https://yarnpkg.com/lang/en/)
+[yarn 跟npm差不多，一个包管理工具 &lt;- 传送门](https://yarnpkg.com/lang/en/)
 
 ### 渐进式的向下兼容 {#jian-jin-shi-de-xiang-xia-jian-rong}
 
