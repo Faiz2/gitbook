@@ -9,7 +9,7 @@
 * [Ember 中计算属性](ember-zhong-ji-suan-shu-xing.md)
 * [Ember 中的路由器](ember-zhong-de-lu-you-qi.md)
 * Ember 中的Components
-* Ember Data
+* [Ember Data](ember-data.md)
 * [Ember Testing](ember-testing.md)
 * [总结](zong-jie.md)
 
